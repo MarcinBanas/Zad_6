@@ -1,0 +1,22 @@
+﻿<Window x:Class="Zad_6.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zad_6"
+        mc:Ignorable="d"
+        Title="Logowanie" Height="336" Width="451">
+    <Grid Margin="10,0,10,24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Style="{DynamicResource TextBox_Style}" x:Name="TextBox_Login" HorizontalAlignment="Left" Margin="171,62,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150" Height="45" Grid.Row="1"/>
+        <TextBox Style="{DynamicResource TextBox_Style}" x:Name="TextBox_Haslo" HorizontalAlignment="Left" Margin="171,117,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="150" Height="41" Grid.Row="1"/>
+        <Button Style="{DynamicResource Button_Style}" x:Name="Button_Zaloguj" Content="Zaloguj" HorizontalAlignment="Left" Margin="105,166,0,0" VerticalAlignment="Top" Grid.Row="1" Height="51" Width="96"/>
+        <Button Style="{DynamicResource Button_Style}" x:Name="Button_Powieksz" Content="Powiększ" HorizontalAlignment="Left" Margin="206,166,0,0" VerticalAlignment="Top" Grid.Row="1" Height="51" Width="115" Click="Button_Click"/>
+        <Label Style="{DynamicResource Label_Style}" x:Name="Label_Login" Content="Login" HorizontalAlignment="Left" Margin="21,62,0,0" VerticalAlignment="Top" Height="45" Grid.Row="1" Width="145"/>
+        <Label Style="{DynamicResource Label_Style}" x:Name="Label_Password" Content="Password" HorizontalAlignment="Left" Margin="21,112,0,0" VerticalAlignment="Top" Height="51" Grid.Row="1" Width="145" RenderTransformOrigin="0.5,0.537"/>
+
+    </Grid>
+</Window>
